@@ -41,12 +41,17 @@
   # plain files is through 'home.file'.
   home.file = {
 	".config/hypr/hyprland.conf".source = ./hyprland.conf;
+	".config/hypr/hyprpaper.conf".text = "preload = ~/Pictures/bg.png\nwallpaper = eDP-1,~/Pictures/bg.png";
 	".config/nvim/" = {
 		source = ./nvim;
 		recursive = true;
 	};
 	".config/waybar" = {
 		source = ./waybar;
+		recursive = true;
+	};
+	".config/rofi" = {
+		source = ./rofi;
 		recursive = true;
 	};
     # # Building this configuration will create a copy of 'dotfiles/screenrc' in
