@@ -45,6 +45,10 @@
 		source = ./nvim;
 		recursive = true;
 	};
+	".config/waybar" = {
+		source = ./waybar;
+		recursive = true;
+	};
     # # Building this configuration will create a copy of 'dotfiles/screenrc' in
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # # symlink to the Nix store copy.
@@ -75,7 +79,7 @@
     enable = true;
     enableCompletion = true;
     enableAutosuggestions = true;
-    enableSyntaxHighlighting = true;
+    syntaxHighlighting.enable = true;
     shellAliases = {
       ll = "ls -l";
       update = "sudo nixos-rebuild switch --flake ~/.dotfiles#nix-wayland";
